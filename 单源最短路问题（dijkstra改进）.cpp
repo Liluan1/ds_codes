@@ -23,7 +23,7 @@ void dij(int s){
 			continue;
 		for(int i=0;i<G[v].size();++i){
 			edge e = G[v][i];
-			cout<<e.to<<' '<<e.cost<<endl;
+//			cout<<e.to<<' '<<e.cost<<endl;
 			if(d[e.to] > d[v] + e.cost){
 				d[e.to] = d[v] + e.cost;
 				que.push(P(d[e.to], e.to));
